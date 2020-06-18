@@ -1,2 +1,13 @@
 ---
-# tasks file for skeleton
+- name: Create joiner user
+  user:
+    name: joiner
+    shell: /bin/bash
+
+- name: Allow joiner user passwordless sudo for the setup_freeipa.sh command
+  copy:
+    dest: /etc/sudoers.d/joiner
+    mode: 0400
+    content: |
+        joiner ALL=(ALL) NOPASSWD: /usr/local/sbin/setup_freeipa.sh
+    validate: 'visudo -scf %s'
