@@ -1,7 +1,7 @@
 ---
 galaxy_info:
-  author: First Last
-  description: Skeleton Ansible role
+  author: Shane Frasier
+  description: Create the joiner user, which can join the host to the IPA domain.
   company: CISA Cyber Assessments
   license: CC0
   min_ansible_version: 2.0
@@ -26,6 +26,7 @@ galaxy_info:
         - bionic
         - xenial
   galaxy_tags:
-    - skeleton
+    - ipa
+    - freeipa
 
 dependencies: []
