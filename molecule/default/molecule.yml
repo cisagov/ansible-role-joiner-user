@@ -11,15 +11,16 @@ lint: |
 platforms:
   - name: amazonlinux2
     image: amazonlinux:2
-  - name: debian9
-    image: debian:stretch-slim
-    dockerfile: Dockerfile_debian_9.j2
   - name: debian10
     image: debian:buster-slim
-  - name: debian11
-    image: debian:bullseye-slim
-  - name: kali
-    image: kalilinux/kali-rolling
+  # For some reason Debian Bullseye (the current Debian Testing) does
+  # not contain the freeipa-client package, although Debian Sid (the
+  # current Debian Unstable) does.
+  #
+  # - name: debian11
+  #   image: debian:bullseye-slim
+  # - name: kali
+  #   image: kalilinux/kali-rolling
   - name: fedora32
     image: fedora:32
   - name: fedora33
