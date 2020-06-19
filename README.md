@@ -4,13 +4,9 @@
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-joiner-user.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-joiner-user/alerts/)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-joiner-user.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-joiner-user/context:python)
 
-This is a skeleton project that can be used to quickly get a new
-[cisagov](https://github.com/cisagov) Ansible role GitHub project
-started.  This skeleton project contains
-[licensing information](LICENSE), as well as
-[pre-commit hooks](https://pre-commit.com) and
-[GitHub Actions](https://github.com/features/actions) configurations
-appropriate for an Ansible role.
+This Ansible role creates the `joiner` user, whose sole reason for
+existence is to join the host to the
+[FreeIPA](https://www.freeipa.org/) domain.
 
 ## Requirements ##
 
@@ -33,7 +29,7 @@ Here's how to use it in a playbook:
   become: yes
   become_method: sudo
   roles:
-    - skeleton
+    - joiner
 ```
 
 ## Contributing ##
@@ -56,4 +52,4 @@ with this waiver of copyright interest.
 
 ## Author Information ##
 
-First Last - <first.last@trio.dhs.gov>
+Shane Frasier - <jeremy.frasier@trio.dhs.gov>
