@@ -1,5 +1,11 @@
 ---
-- name: Prepare
+- name: Import upgrade playbook
+  import_playbook: upgrade.yml
+
+- name: Import python playbook
+  import_playbook: python.yml
+
+- name: Install freeipa-client and shadow-utils
   hosts: all
   roles:
     - freeipa_client
