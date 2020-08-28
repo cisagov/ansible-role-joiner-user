@@ -9,5 +9,5 @@
     dest: /etc/sudoers.d/joiner
     mode: 0400
     content: |
-        joiner ALL=(ALL) NOPASSWD: /usr/local/sbin/setup_freeipa.sh
+        joiner ALL=(ALL) NOPASSWD: /usr/local/sbin/00_setup_freeipa.sh
     validate: 'visudo -scf %s'

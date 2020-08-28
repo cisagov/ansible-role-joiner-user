@@ -41,7 +41,7 @@ def test_sudo_config(host):
         # file that is created via cloud-init is not yet present.
         # Sudo will allow joiner to try to run it, though, and we will
         # get the failure message from the script itself.
-        good_cmd = host.run("sudo /usr/local/sbin/setup_freeipa.sh")
+        good_cmd = host.run("sudo /usr/local/sbin/00_setup_freeipa.sh")
         assert (
             good_cmd.stdout.rstrip()
             == """FreeIPA variables file does not exist: /var/lib/cloud/instance/freeipa-vars.sh
