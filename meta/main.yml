@@ -3,6 +3,9 @@ galaxy_info:
   author: Shane Frasier
   description: Create the joiner user, which can join the host to the IPA domain.
   company: CISA Cyber Assessments
+  galaxy_tags:
+    - ipa
+    - freeipa
   license: CC0
   min_ansible_version: 2.0
   platforms:
@@ -28,8 +31,6 @@ galaxy_info:
       versions:
         - bionic
         - xenial
-  galaxy_tags:
-    - ipa
-    - freeipa
+  role_name: joiner_user
 
 dependencies: []
