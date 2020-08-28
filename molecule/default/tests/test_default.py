@@ -29,7 +29,7 @@ def test_sudo_config(host):
         # This command should fail, since
         # 1. joiner is not allowed to run this command via sudo.
         # 2. Therefore sudo will ask for a password, and there is no
-        # askpass helped installed.
+        # askpass helper installed.
         #
         # On all distributions, "askpass" is mentioned in the failure
         # message.
