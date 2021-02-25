@@ -1,11 +1,11 @@
 ---
 - name: Create joiner user
-  user:
+  ansible.builtin.user:
     name: joiner
     shell: /bin/bash
 
 - name: Allow joiner user passwordless sudo for the setup_freeipa.sh command
-  copy:
+  ansible.builtin.copy:
     dest: /etc/sudoers.d/joiner
     mode: 0400
     content: |
