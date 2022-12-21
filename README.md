@@ -37,7 +37,7 @@ Here's how to use it in a playbook:
   tasks:
     - name: Create the joiner user
       ansible.builtin.include_role:
-        name: joiner
+        name: joiner_user
 ```
 
 ## Contributing ##
