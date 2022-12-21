@@ -1,8 +1,7 @@
 # ansible-role-joiner-user #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-joiner-user/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-joiner-user/actions)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-joiner-user.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-joiner-user/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-joiner-user.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-joiner-user/context:python)
+[![CodeQL](https://github.com/cisagov/ansible-role-joiner-user/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-joiner-user/actions/workflows/codeql-analysis.yml)
 
 This Ansible role creates the `joiner` user, whose sole reason for
 existence is to join the host to the
@@ -35,8 +34,10 @@ Here's how to use it in a playbook:
 - hosts: all
   become: yes
   become_method: sudo
-  roles:
-    - joiner
+  tasks:
+    - name: Create the joiner user
+      ansible.builtin.include_role:
+        name: joiner_user
 ```
 
 ## Contributing ##
