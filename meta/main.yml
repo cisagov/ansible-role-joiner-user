@@ -1,8 +1,9 @@
 ---
+dependencies: []
 galaxy_info:
   author: Shane Frasier
-  description: Create the joiner user, which can join the host to the IPA domain.
   company: CISA Cyber Assessments
+  description: Create the joiner user, which can join the host to the IPA domain.
   galaxy_tags:
     - ipa
     - freeipa
@@ -28,7 +29,6 @@ galaxy_info:
         - bookworm
     - name: Fedora
       versions:
-        - "35"
         - "36"
         - "37"
     - name: Ubuntu
@@ -37,5 +37,3 @@ galaxy_info:
         - focal
         - jammy
   role_name: joiner_user
-
-dependencies: []
