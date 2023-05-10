@@ -6,8 +6,8 @@
 
 - name: Allow joiner user passwordless sudo for the setup_freeipa.sh command
   ansible.builtin.copy:
-    dest: /etc/sudoers.d/joiner
-    mode: 0400
     content: |
         joiner ALL=(ALL) NOPASSWD: /usr/local/sbin/00_setup_freeipa.sh
+    dest: /etc/sudoers.d/joiner
+    mode: 0400
     validate: 'visudo -scf %s'
