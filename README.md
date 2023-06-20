@@ -24,7 +24,9 @@ None.
 
 ## Dependencies ##
 
-None.
+- [cisagov/ansible-role-freeipa-client](https://github.com/cisagov/ansible-role-freeipa-client):
+  In order to join a host to a FreeIPA domain, one must have the
+  FreeIPA client system package installed.
 
 ## Example Playbook ##
 
