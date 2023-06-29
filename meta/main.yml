@@ -1,5 +1,7 @@
 ---
-dependencies: []
+dependencies:
+  - name: freeipa_client
+    src: https://github.com/cisagov/ansible-role-freeipa-client
 galaxy_info:
   author: Shane Frasier
   company: CISA Cyber Assessments
@@ -18,9 +20,9 @@ galaxy_info:
   platforms:
     # Amazon Linux does not (yet?) provide a FreeIPA client package,
     # which is required for this Ansible role.
-    # - name: Amazon Linux 2023
+    # - name: Amazon Linux
     #   versions:
-    #     - any
+    #     - "2023"
     - name: Debian
       versions:
         - buster
@@ -28,14 +30,13 @@ galaxy_info:
         - bookworm
     - name: Fedora
       versions:
-        - "36"
         - "37"
+        - "38"
     - name: Kali
       versions:
         - "2023"
     - name: Ubuntu
       versions:
-        - bionic
         - focal
         - jammy
   role_name: joiner_user

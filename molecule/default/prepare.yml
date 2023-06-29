@@ -17,7 +17,3 @@
       ansible.builtin.package:
         name:
           - shadow-utils
-- name: Install freeipa-client
-  hosts: all
-  roles:
-    - freeipa_client
