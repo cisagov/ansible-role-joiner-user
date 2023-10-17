@@ -1,4 +1,9 @@
 ---
+# Note that dependencies listed here are automatically installed
+# before this role.  Role variables for any roles listed here can be
+# assigned static variables.
+#
+# See also cisagov/skeleton-ansible-role#153.
 dependencies:
   - name: freeipa_client
     src: https://github.com/cisagov/ansible-role-freeipa-client
@@ -40,3 +45,4 @@ galaxy_info:
         - focal
         - jammy
   role_name: joiner_user
+  standalone: true

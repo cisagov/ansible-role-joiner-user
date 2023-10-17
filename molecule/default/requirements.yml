@@ -1,5 +1,5 @@
 ---
-- src: https://github.com/cisagov/ansible-role-freeipa-client
-  name: freeipa_client
-- src: https://github.com/cisagov/ansible-role-upgrade
-  name: upgrade
+- name: freeipa_client
+  src: https://github.com/cisagov/ansible-role-freeipa-client
+- name: upgrade
+  src: https://github.com/cisagov/ansible-role-upgrade
