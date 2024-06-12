@@ -80,6 +80,8 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
   # Debian Trixie does not currently offer an IPA client package:
   # https://packages.debian.org/search?suite=all&searchon=names&keywords=freeipa
+  #
+  # See #48 for more details.
   # - cgroupns_mode: host
   #   command: /lib/systemd/systemd
   #   image: docker.io/cisagov/docker-debian13-ansible:latest
@@ -101,6 +103,8 @@ platforms:
   # Kali is based on Debian Trixie and therefore does not currently offer an
   # IPA client package either:
   # https://packages.debian.org/search?suite=all&searchon=names&keywords=freeipa
+  #
+  # See #48 for more details.
   # - cgroupns_mode: host
   #   command: /lib/systemd/systemd
   #   image: docker.io/cisagov/docker-kali-ansible:latest

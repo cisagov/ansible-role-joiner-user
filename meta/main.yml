@@ -35,6 +35,8 @@ galaxy_info:
         - bookworm
         # Debian Trixie does not currently offer an IPA client package:
         # https://packages.debian.org/search?suite=all&searchon=names&keywords=freeipa
+        #
+        # See #48 for more details.
         # - trixie
     - name: Fedora
       versions:
@@ -43,6 +45,8 @@ galaxy_info:
     # Kali is based on Debian Trixie and therefore does not currently offer an
     # IPA client package either:
     # https://packages.debian.org/search?suite=all&searchon=names&keywords=freeipa
+    #
+    # See #48 for more details.
     # - name: Kali
     #   versions:
     #     - "2023"
