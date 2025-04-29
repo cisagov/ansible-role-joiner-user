@@ -9,5 +9,5 @@
     content: |
         joiner ALL=(ALL) NOPASSWD: /usr/local/sbin/00_setup_freeipa.sh
     dest: /etc/sudoers.d/joiner
-    mode: 0400
+    mode: u=r,g=,o=
     validate: visudo --strict --check --file=%s
