@@ -8,6 +8,8 @@ collections:
     version: ">=3.10.2"
 
 roles:
+  - name: debian_archive
+    src: https://github.com/cisagov/ansible-role-debian-archive
   - name: freeipa_client
     src: https://github.com/cisagov/ansible-role-freeipa-client
   - name: upgrade
