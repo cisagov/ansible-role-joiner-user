@@ -1,6 +1,7 @@
 # ansible-role-joiner-user #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-joiner-user/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-joiner-user/actions)
+[![License](https://img.shields.io/github/license/cisagov/ansible-role-joiner-user)](https://spdx.org/licenses/)
 [![CodeQL](https://github.com/cisagov/ansible-role-joiner-user/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-joiner-user/actions/workflows/codeql-analysis.yml)
 
 This Ansible role creates the `joiner` user, whose sole reason for
