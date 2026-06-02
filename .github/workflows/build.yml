@@ -238,7 +238,9 @@ jobs:
           # - kali-systemd
           - ubuntu-22-systemd
           - ubuntu-24-systemd
-          - ubuntu-26-systemd
+          # TODO: #61 - Support Ubuntu 26.04 when that becomes
+          # possible.
+          # - ubuntu-26-systemd
         scenario:
           - default
     steps:
