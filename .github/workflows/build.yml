@@ -228,10 +228,14 @@ jobs:
           - debian11-systemd
           - debian12-systemd
           - debian13-systemd
-          - debian14-systemd
+          # TODO: #48 - Debian Testing does not currently offer
+          # freeipa-client.
+          # - debian14-systemd
           - fedora42-systemd
           - fedora43-systemd
-          - kali-systemd
+          # TODO: #48 - Debian Testing (and hence Kali) does not
+          # currently offer freeipa-client.
+          # - kali-systemd
           - ubuntu-22-systemd
           - ubuntu-24-systemd
           - ubuntu-26-systemd

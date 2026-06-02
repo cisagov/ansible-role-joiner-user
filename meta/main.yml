@@ -32,14 +32,18 @@ galaxy_info:
         - bullseye
         - bookworm
         - trixie
-        - forky
+        # TODO: #48 - Debian Testing does not currently offer
+        # freeipa-client.
+        # - forky
     - name: Fedora
       versions:
         - "42"
         - "43"
-    - name: Kali
-      versions:
-        - "2023"
+    # TODO: #48 - Debian Testing (and hence Kali) does not currently
+    # offer freeipa-client.
+    # - name: Kali
+    #   versions:
+    #     - "2023"
     - name: Ubuntu
       versions:
         - jammy
